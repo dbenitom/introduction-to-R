@@ -1,0 +1,289 @@
+sample	taxonomy	reads
+Hexadecane70	"Archaea;Hadesarchaea;uncultured archaeon"	477
+Hexadecane70	"Bacteria;Acetothermia;uncultured bacterium"	112
+Hexadecane70	"Archaea;Aigarchaeota;Aigarchaeota Incertae Sedis;Unknown Order;Unknown Family;Candidatus Caldiarchaeum"	40
+Hexadecane70	"Archaea;Bathyarchaeota;uncultured archaeon"	40
+Hexadecane70	"Archaea;Crenarchaeota;Thermoprotei;Thermoproteales;Thermofilaceae;Thermofilum"	21
+Hexadecane70	"Archaea;Euryarchaeota;Thermoplasmata;Thermoplasmatales;20c-4;uncultured archaeon"	16
+Hexadecane70	"Archaea;Korarchaeota;Korarchaeota Incertae Sedis;Unknown Order;Unknown Family;Candidatus Korarchaeum"	15
+Hexadecane70	"Archaea;Euryarchaeota;Thermococci;Thermococcales;Thermococcaceae;Thermococcus"	12
+Hexadecane70	"Archaea;Euryarchaeota;Thermoplasmata;Thermoplasmatales;pMC2A24;uncultured archaeon"	12
+Hexadecane70	"Bacteria;Chloroflexi;Thermoflexia;Thermoflexales;Thermoflexaceae;Thermoflexus"	10
+Hexadecane70	"Archaea;Euryarchaeota;Archaeoglobi;Archaeoglobales;Archaeoglobaceae;uncultured"	9
+Hexadecane70	"Bacteria;Acetothermia;terrestrial metagenome"	9
+Hexadecane70	"Archaea;Marine Hydrothermal Vent Group 1(MHVG-1);uncultured archaeon"	5
+Hexadecane70	"Archaea;Hadesarchaea;uncultured euryarchaeote"	5
+Hexadecane70	"Archaea;Bathyarchaeota;uncultured crenarchaeote"	4
+Hexadecane70	"Archaea;Candidate division YNPFFA;uncultured archaeon"	4
+Hexadecane70	"Bacteria;Thermotogae;Thermotogae;uncultured;uncultured bacterium"	4
+Hexadecane70	"Bacteria;Thermodesulfobacteria;Thermodesulfobacteria;Thermodesulfobacteriales;Thermodesulfobacteriaceae;Caldimicrobium"	4
+Hexadecane70	"Archaea;Thaumarchaeota;Group C3;uncultured archaeon"	4
+Methane70	"Archaea;Bathyarchaeota;uncultured archaeon"	7318
+Methane70	"Bacteria;Acetothermia;uncultured bacterium"	6754
+Methane70	"Archaea;Crenarchaeota;Thermoprotei;Thermoproteales;Thermofilaceae;Thermofilum"	5346
+Methane70	"Archaea;Aigarchaeota;Aigarchaeota Incertae Sedis;Unknown Order;Unknown Family;Candidatus Caldiarchaeum"	3183
+Methane70	"Archaea;Euryarchaeota;Archaeoglobi;Archaeoglobales;Archaeoglobaceae;Archaeoglobus"	2148
+Methane70	"Archaea;Candidate division YNPFFA;uncultured archaeon"	2084
+Methane70	"Archaea;Hadesarchaea;uncultured archaeon"	2069
+Methane70	"Archaea;Euryarchaeota;Methanomicrobia;ANME-1;uncultured archaeon"	1826
+Methane70	"Archaea;Crenarchaeota;Thermoprotei;Desulfurococcales;Pyrodictiaceae;uncultured"	1701
+Methane70	"Archaea;Euryarchaeota;Archaeoglobi;Archaeoglobales;Archaeoglobaceae;uncultured"	1541
+Methane70	"Archaea;Euryarchaeota;Thermococci;Thermococcales;Thermococcaceae;Thermococcus"	1197
+Methane70	"Archaea;Korarchaeota;Korarchaeota Incertae Sedis;Unknown Order;Unknown Family;Candidatus Korarchaeum"	1183
+Methane70	"Archaea;Euryarchaeota;Thermoplasmata;Thermoplasmatales;20c-4;uncultured archaeon"	1171
+Methane70	"Archaea;Thaumarchaeota;Group C3;uncultured archaeon"	1156
+Methane70	"Archaea;Crenarchaeota;Thermoprotei;Terrestrial Miscellaneous Gp(TMCG);uncultured archaeon"	1106
+Methane70	"Bacteria;Chloroflexi;Thermoflexia;Thermoflexales;Thermoflexaceae;Thermoflexus"	966
+Methane70	"Bacteria;Thermodesulfobacteria;Thermodesulfobacteria;Thermodesulfobacteriales;Thermodesulfobacteriaceae;Caldimicrobium"	953
+Methane70	"Archaea;Aigarchaeota;Terrestrial Hot Spring Gp(THSCG);uncultured archaeon"	844
+Methane70	"Bacteria;Proteobacteria;Deltaproteobacteria;Bdellovibrionales;Bacteriovoracaceae;HotSeep-1"	633
+Methane70	"Archaea;Bathyarchaeota;uncultured crenarchaeote"	504
+Methane70	"Archaea;Marine Hydrothermal Vent Group 1(MHVG-1);uncultured archaeon"	453
+Methane70	"Archaea;Crenarchaeota;Thermoprotei;HTM1036S-A29;uncultured archaeon"	439
+Methane70	"Bacteria;Thermotogae;Thermotogae;EM3;uncultured bacterium"	434
+Methane70	"Archaea;Euryarchaeota;Archaeoglobi;Archaeoglobales;Archaeoglobaceae;Ferroglobus"	379
+Methane70	"Archaea;Crenarchaeota;Thermoprotei;Desulfurococcales;Desulfurococcaceae;Staphylothermus"	377
+Methane70	"Bacteria;Acetothermia;terrestrial metagenome"	282
+Methane70	"Archaea;Crenarchaeota;Thermoprotei;Desulfurococcales;Pyrodictiaceae;Pyrodictium"	229
+Methane70	"Archaea;Aigarchaeota;Terrestrial Hot Spring Gp(THSCG);unidentified archaeon"	200
+Methane70	"Archaea;Candidate division YNPFFA;uncultured crenarchaeote"	197
+Methane70	"Archaea;Bathyarchaeota;uncultured sediment archaeon"	180
+Methane70	"Archaea;Crenarchaeota;Thermoprotei;Fervidicoccales;Fervidicoccaceae;Fervidicoccus"	173
+Methane70	"Archaea;AK8;uncultured archaeon"	157
+Methane70	"Archaea;Euryarchaeota;Archaeoglobi;Archaeoglobales;Archaeoglobaceae;uncultured archaeon"	154
+Methane70	"Bacteria;AC1;uncultured bacterium"	152
+Methane70	"Archaea;Crenarchaeota;Thermoprotei;Desulfurococcales;Desulfurococcaceae;Ignisphaera"	148
+Methane70	"Archaea;Marine Benthic Group E;uncultured archaeon"	145
+Methane70	"Bacteria;Parcubacteria;uncultured bacterium"	134
+Methane70	"Bacteria;Thermotogae;Thermotogae;uncultured;uncultured bacterium"	131
+Methane70	"Archaea;Thaumarchaeota;FS243A-60;uncultured archaeon"	130
+Methane70	"Archaea;Crenarchaeota;Thermoprotei;Fervidicoccales;Fervidicoccaceae;uncultured"	128
+Methane70	"Archaea;Marine Hydrothermal Vent Group 1(MHVG-1);unidentified archaeon"	122
+Methane70	"Archaea;Bathyarchaeota;Candidatus Bathyarchaeota archaeon B24"	122
+Methane70	"Archaea;Euryarchaeota;Thermoplasmata;Thermoplasmatales;20c-4;uncultured sediment archaeon"	120
+Methane70	"Archaea;Thaumarchaeota;Group C3;marine metagenome"	118
+Methane70	"Archaea;Crenarchaeota;Thermoprotei;Terrestrial Miscellaneous Gp(TMCG);uncultured crenarchaeote"	108
+Methane70	"Archaea;Crenarchaeota;Thermoprotei;uncultured archaeon"	95
+Methane70	"Archaea;Bathyarchaeota;uncultured Thermoprotei archaeon"	88
+Methane70	"Archaea;Aenigmarchaeota;Deep Sea Euryarchaeotic Group(DSEG);uncultured archaeon"	87
+Methane70	"Archaea;Aenigmarchaeota;Deep Sea Euryarchaeotic Group(DSEG);uncultured euryarchaeote"	84
+Methane70	"Archaea;Euryarchaeota;Thermoplasmata;Thermoplasmatales;pMC2A24;uncultured archaeon"	81
+Methane70	"Bacteria;Fervidibacteria;Fervidibacteria bacterium JGI 0000001-G10"	80
+Methane70	"Archaea;Bathyarchaeota;miscellaneous Crenarchaeota group archaeon SMTZ1-55"	69
+Methane70	"Archaea;Crenarchaeota;Thermoprotei;Desulfurococcales;Desulfurococcaceae;uncultured"	68
+Methane70	"Bacteria;Omnitrophica;uncultured bacterium"	64
+Methane70	"Archaea;Euryarchaeota;Archaeoglobi;Archaeoglobales;Archaeoglobaceae;uncultured Archaeoglobales archaeon"	64
+Methane70	"Archaea;Crenarchaeota;Thermoprotei;HTM1036S-A29;uncultured Thermoproteales archaeon"	59
+Methane70	"Archaea;Euryarchaeota;Methanococci;Methanococcales;Methanococcaceae;uncultured"	53
+Methane70	"Archaea;Hadesarchaea;uncultured euryarchaeote"	51
+Methane70	"Archaea;Euryarchaeota;Archaeoglobi;Archaeoglobales;Archaeoglobaceae;Geoglobus"	47
+Methane70	"Bacteria;Aminicenantes;uncultured bacterium"	40
+Methane70	"Archaea;pMC2A209;uncultured archaeon"	40
+Methane70	"Archaea;Thaumarchaeota;FS243A-60;uncultured crenarchaeote"	39
+Methane70	"Archaea;Euryarchaeota;Thermoplasmata;Thermoplasmatales;Deep Sea Hydrothermal Vent Gp 2(DHVEG-2);uncultured archaeon"	37
+Methane70	"Archaea;Crenarchaeota;Thermoprotei;Desulfurococcales;Desulfurococcaceae;Thermosphaera"	37
+Methane70	"Archaea;Diapherotrites;Diapherotrites Incertae Sedis;Unknown Order;Unknown Family;Candidatus Iainarchaeum"	35
+Methane70	"Archaea;Crenarchaeota;Thermoprotei;Desulfurococcales;Desulfurococcaceae;Desulfurococcus"	35
+Methane70	"Archaea;Thaumarchaeota;Group C3;uncultured crenarchaeote"	35
+Methane70	"Archaea;Euryarchaeota;Thermoplasmata;Thermoplasmatales;uncultured archaeon"	34
+Methane70	"Archaea;Euryarchaeota;Archaeoglobi;Archaeoglobales;Archaeoglobaceae;uncultured Archaeoglobi archaeon"	32
+Methane70	"Bacteria;Actinobacteria;Coriobacteriia;Coriobacteriales;Coriobacteriaceae;Slackia"	30
+Methane70	"Bacteria;Fervidibacteria;unidentified eubacterium clone OctSpA1-106"	29
+Methane70	"Archaea;Euryarchaeota;Thermoplasmata;Thermoplasmatales;Marine Benthic Group D and DHVEG-1;uncultured archaeon"	29
+Methane70	"Archaea;Bathyarchaeota;uncultured Desulfurococcales archaeon"	27
+Methane70	"Bacteria;Caldiserica;Caldisericia;Caldisericales;TTA-B1;uncultured bacterium"	25
+Methane70	"Bacteria;Chloroflexi;Dehalococcoidia;MSBL5;uncultured bacterium"	25
+Methane70	"Bacteria;Latescibacteria;uncultured bacterium"	25
+Methane70	"Bacteria;Deferribacteres;Deferribacteres Incertae Sedis;Unknown Order;Unknown Family;Caldithrix"	25
+Methane70	"Archaea;Crenarchaeota;Thermoprotei;Desulfurococcales;Desulfurococcaceae;Thermogladius"	25
+Methane70	"Archaea;Candidate division YNPFFA;uncultured Desulfurococcales archaeon"	24
+Methane70	"Bacteria;Fervidibacteria;uncultured bacterium"	23
+Methane70	"Bacteria;Thermotogae;Thermotogae;EM3;uncultured Thermotogales bacterium"	22
+Methane70	"Archaea;Crenarchaeota;Thermoprotei;Desulfurococcales;Desulfurococcaceae;uncultured Desulfurococcales archaeon"	22
+Methane70	"Archaea;Thaumarchaeota;TOTO-A6-15;uncultured archaeon"	22
+Methane70	"Bacteria;Parcubacteria;Candidatus Yanofskybacteria;Parcubacteria bacterium DG_74_2"	19
+Methane70	"Bacteria;Aquificae;Aquificae;Aquificales;Aquificaceae;Aquifex"	19
+Methane70	"Archaea;Crenarchaeota;Thermoprotei;Desulfurococcales;Desulfurococcaceae;uncultured archaeon"	18
+Methane70	"Archaea;Euryarchaeota;Methanomicrobia;Methanosarcinales;Methermicoccaceae;Methermicoccus"	18
+Methane70	"Bacteria;Actinobacteria;OPB41;unidentified Actinomycete OPB41"	17
+Methane70	"Archaea;Crenarchaeota;Thermoprotei;Desulfurococcales;Desulfurococcaceae;Ignicoccus"	17
+Methane70	"Archaea;uncultured archaeon"	16
+Methane70	"Archaea;Euryarchaeota;Methanococci;Methanococcales;Methanococcaceae;Methanococcus"	16
+Methane70	"Archaea;Thaumarchaeota;YS18As63;uncultured archaeon"	15
+Methane70	"Bacteria;Thermodesulfobacteria;Thermodesulfobacteria;Thermodesulfobacteriales;Thermodesulfobacteriaceae;Thermodesulfatator"	15
+Methane70	"Bacteria;Proteobacteria;Deltaproteobacteria;Desulfarculales;Desulfarculaceae;uncultured"	15
+Methane70	"Archaea;Euryarchaeota;Archaeoglobi;Archaeoglobales;Archaeoglobaceae;uncultured archaeon 20b-54"	14
+Methane70	"Archaea;Euryarchaeota;Methanococci;Methanococcales;Methanocaldococcaceae;Methanocaldococcus"	14
+Methane70	"Archaea;Crenarchaeota;Thermoprotei;Desulfurococcales;Desulfurococcaceae;Aeropyrum"	14
+Methane70	"Archaea;Thaumarchaeota;OPPD003;Thaumarchaeota archaeon SCGC AB-179-E04"	14
+Methane70	"Bacteria;Aquificae;Aquificae;Aquificales;Hydrogenothermaceae;Sulfurihydrogenibium"	12
+Methane70	"Archaea;Aenigmarchaeota;Deep Sea Euryarchaeotic Group(DSEG);Candidatus Aenigmarchaeota archaeon JGI 0000106-F11"	12
+Methane70	"Bacteria;Thermotogae;Thermotogae;EM3;microbial mat metagenome"	12
+Methane70	"Bacteria;Acidobacteria;Blastocatellia;Blastocatellales;Blastocatellaceae (Subgroup 4);11-24"	12
+Methane70	"Bacteria;Thermotogae;Thermotogae;Thermotogales;Thermotogaceae;Thermotoga"	12
+Methane70	"Bacteria;GAL15;uncultured bacterium"	12
+Methane70	"Bacteria;Firmicutes;Clostridia;Clostridiales;Family XVII;Thermaerobacter"	11
+Methane70	"Bacteria;Acetothermia;bacterium GBS-1"	11
+Methane70	"Archaea;Crenarchaeota;Thermoprotei;Acidilobales;SK190;uncultured Acidilobus sp. CIS"	11
+Methane70	"Archaea;Crenarchaeota;Thermoprotei;Thermoproteales;Thermoproteaceae;Pyrobaculum"	11
+Methane70	"Bacteria;Parcubacteria;Candidatus Yanofskybacteria;uncultured bacterium"	11
+Methane70	"Bacteria;Parcubacteria;Candidatus Giovannonibacteria;uncultured Parcubacteria group bacterium"	10
+Methane70	"Bacteria;Firmicutes;Clostridia;Thermoanaerobacterales;Thermoanaerobacteraceae;Ammonifex"	10
+Methane70	"Archaea;Euryarchaeota;Thermoplasmata;Thermoplasmatales;20c-4;uncultured euryarchaeote"	9
+Methane70	"Bacteria;Gemmatimonadetes;Gemmatimonadetes;Gemmatimonadales;Gemmatimonadaceae;uncultured"	9
+Methane70	"Bacteria;Firmicutes;Clostridia;Thermoanaerobacterales;Thermoanaerobacteraceae;Brockia"	9
+Methane70	"Archaea;Aigarchaeota;Terrestrial Hot Spring Gp(THSCG);uncultured crenarchaeote"	9
+Methane70	"Bacteria;AC1;candidate division TA06 bacterium SM1_40"	9
+Methane70	"Bacteria;Parcubacteria;Parcubacteria Incertae Sedis;Unknown Order;Unknown Family;Candidatus Paceibacter"	9
+Methane70	"Archaea;Euryarchaeota;Methanobacteria;Methanobacteriales;Methanothermaceae;Methanothermus"	9
+Methane70	"Bacteria;Thermotogae;Thermotogae;EM3;bacterium T1.2"	9
+Methane70	"Bacteria;Firmicutes;Bacilli;Bacillales;Bacillaceae;Bacillus"	8
+Methane70	"Bacteria;Aquificae;Aquificae;Aquificales;Aquificales Incertae Sedis;Thermosulfidibacter"	8
+Methane70	"Bacteria;Proteobacteria;Gammaproteobacteria;Legionellales;Legionellaceae;Legionella"	8
+Methane80	"Bacteria;Acetothermia;uncultured bacterium"	6005
+Methane80	"Archaea;Bathyarchaeota;uncultured archaeon"	5638
+Methane80	"Archaea;Euryarchaeota;Archaeoglobi;Archaeoglobales;Archaeoglobaceae;Archaeoglobus"	4325
+Methane80	"Archaea;Hadesarchaea;uncultured archaeon"	3629
+Methane80	"Bacteria;Thermodesulfobacteria;Thermodesulfobacteria;Thermodesulfobacteriales;Thermodesulfobacteriaceae;Caldimicrobium"	3419
+Methane80	"Archaea;Euryarchaeota;Thermococci;Thermococcales;Thermococcaceae;Thermococcus"	3234
+Methane80	"Archaea;Euryarchaeota;Methanomicrobia;ANME-1;uncultured archaeon"	2522
+Methane80	"Archaea;Euryarchaeota;Archaeoglobi;Archaeoglobales;Archaeoglobaceae;uncultured"	2471
+Methane80	"Archaea;Aigarchaeota;Aigarchaeota Incertae Sedis;Unknown Order;Unknown Family;Candidatus Caldiarchaeum"	2344
+Methane80	"Archaea;Euryarchaeota;Thermoplasmata;Thermoplasmatales;20c-4;uncultured archaeon"	2175
+Methane80	"Bacteria;Chloroflexi;Thermoflexia;Thermoflexales;Thermoflexaceae;Thermoflexus"	1761
+Methane80	"Bacteria;Thermotogae;Thermotogae;EM3;uncultured bacterium"	1710
+Methane80	"Archaea;Aenigmarchaeota;Deep Sea Euryarchaeotic Group(DSEG);uncultured euryarchaeote"	1699
+Methane80	"Archaea;Korarchaeota;Korarchaeota Incertae Sedis;Unknown Order;Unknown Family;Candidatus Korarchaeum"	1681
+Methane80	"Archaea;Crenarchaeota;Thermoprotei;Thermoproteales;Thermofilaceae;Thermofilum"	1642
+Methane80	"Bacteria;Proteobacteria;Deltaproteobacteria;Bdellovibrionales;Bacteriovoracaceae;HotSeep-1"	1388
+Methane80	"Archaea;Aenigmarchaeota;Deep Sea Euryarchaeotic Group(DSEG);uncultured archaeon"	1132
+Methane80	"Archaea;Crenarchaeota;Thermoprotei;Terrestrial Miscellaneous Gp(TMCG);uncultured archaeon"	1001
+Methane80	"Archaea;Candidate division YNPFFA;uncultured archaeon"	908
+Methane80	"Archaea;Thaumarchaeota;Group C3;uncultured archaeon"	829
+Methane80	"Bacteria;Parcubacteria;uncultured bacterium"	723
+Methane80	"Bacteria;AC1;uncultured bacterium"	655
+Methane80	"Archaea;Aigarchaeota;Terrestrial Hot Spring Gp(THSCG);uncultured archaeon"	614
+Methane80	"Bacteria;Thermotogae;Thermotogae;uncultured;uncultured bacterium"	558
+Methane80	"Bacteria;Acetothermia;terrestrial metagenome"	506
+Methane80	"Archaea;Marine Benthic Group E;uncultured archaeon"	496
+Methane80	"Archaea;AK8;uncultured archaeon"	472
+Methane80	"Archaea;Euryarchaeota;Thermoplasmata;Thermoplasmatales;20c-4;uncultured sediment archaeon"	346
+Methane80	"Archaea;Euryarchaeota;Archaeoglobi;Archaeoglobales;Archaeoglobaceae;uncultured archaeon"	301
+Methane80	"Archaea;Diapherotrites;Diapherotrites Incertae Sedis;Unknown Order;Unknown Family;Candidatus Iainarchaeum"	264
+Methane80	"Archaea;Bathyarchaeota;uncultured crenarchaeote"	253
+Methane80	"Bacteria;Omnitrophica;uncultured bacterium"	229
+Methane80	"Archaea;Euryarchaeota;Methanomicrobia;Methanosarcinales;Methermicoccaceae;Methermicoccus"	206
+Methane80	"Archaea;Euryarchaeota;Archaeoglobi;Archaeoglobales;Archaeoglobaceae;uncultured Archaeoglobi archaeon"	191
+Methane80	"Archaea;Bathyarchaeota;uncultured sediment archaeon"	185
+Methane80	"Bacteria;Aminicenantes;uncultured bacterium"	173
+Methane80	"Archaea;Thaumarchaeota;FS243A-60;uncultured archaeon"	143
+Methane80	"Bacteria;Chloroflexi;Dehalococcoidia;MSBL5;uncultured bacterium"	132
+Methane80	"Bacteria;Thermotogae;Thermotogae;EM3;uncultured Thermotogales bacterium"	122
+Methane80	"Archaea;Euryarchaeota;Thermoplasmata;Thermoplasmatales;pMC2A24;uncultured archaeon"	112
+Methane80	"Archaea;Crenarchaeota;Thermoprotei;Terrestrial Miscellaneous Gp(TMCG);uncultured crenarchaeote"	108
+Methane80	"Archaea;Aenigmarchaeota;Deep Sea Euryarchaeotic Group(DSEG);Candidatus Aenigmarchaeota archaeon JGI 0000106-F11"	101
+Methane80	"Archaea;Euryarchaeota;Archaeoglobi;Archaeoglobales;Archaeoglobaceae;uncultured Archaeoglobales archaeon"	98
+Methane80	"Archaea;Bathyarchaeota;Candidatus Bathyarchaeota archaeon B24"	98
+Methane80	"Archaea;pMC2A209;uncultured archaeon"	94
+Methane80	"Archaea;Aigarchaeota;Terrestrial Hot Spring Gp(THSCG);unidentified archaeon"	89
+Methane80	"Bacteria;Thermotogae;Thermotogae;EM3;microbial mat metagenome"	79
+Methane80	"Bacteria;Parcubacteria;Candidatus Yanofskybacteria;Parcubacteria bacterium DG_74_2"	75
+Methane80	"Archaea;Crenarchaeota;Thermoprotei;Desulfurococcales;Pyrodictiaceae;uncultured"	74
+Methane80	"Archaea;Bathyarchaeota;miscellaneous Crenarchaeota group archaeon SMTZ1-55"	73
+Methane80	"Archaea;Hadesarchaea;uncultured euryarchaeote"	69
+Methane80	"Archaea;Crenarchaeota;Thermoprotei;Fervidicoccales;Fervidicoccaceae;uncultured"	63
+Methane80	"Bacteria;Deferribacteres;Deferribacteres Incertae Sedis;Unknown Order;Unknown Family;Caldithrix"	58
+Methane80	"Archaea;Euryarchaeota;Thermoplasmata;Thermoplasmatales;20c-4;uncultured euryarchaeote"	54
+Methane80	"Archaea;Marine Hydrothermal Vent Group 1(MHVG-1);uncultured archaeon"	53
+Methane80	"Bacteria;Parcubacteria;Candidatus Yanofskybacteria;uncultured bacterium"	52
+Methane80	"Bacteria;Thermodesulfobacteria;Thermodesulfobacteria;Thermodesulfobacteriales;Thermodesulfobacteriaceae;Thermodesulfatator"	52
+Methane80	"Archaea;Euryarchaeota;Methanobacteria;Methanobacteriales;Methanothermaceae;Methanothermus"	51
+Methane80	"Archaea;Crenarchaeota;Thermoprotei;HTM1036S-A29;uncultured archaeon"	50
+Methane80	"Archaea;Thaumarchaeota;Group C3;marine metagenome"	46
+Methane80	"Bacteria;Parcubacteria;Candidatus Giovannonibacteria;uncultured Parcubacteria group bacterium"	45
+Methane80	"Bacteria;AC1;candidate division TA06 bacterium SM1_40"	45
+Methane80	"Archaea;Thaumarchaeota;TOTO-A6-15;uncultured archaeon"	42
+Methane80	"Archaea;Aenigmarchaeota;Aenigmarchaeota Incertae Sedis;Unknown Order;Unknown Family;Candidatus Aenigmarchaeum"	42
+Methane80	"Archaea;Crenarchaeota;Thermoprotei;Fervidicoccales;Fervidicoccaceae;Fervidicoccus"	42
+Methane80	"Bacteria;Firmicutes;Clostridia;Thermoanaerobacterales;Thermoanaerobacteraceae;Ammonifex"	41
+Methane80	"Archaea;Euryarchaeota;Thermoplasmata;Thermoplasmatales;Marine Benthic Group D and DHVEG-1;uncultured archaeon"	41
+Methane80	"Bacteria;Proteobacteria;Deltaproteobacteria;Desulfarculales;Desulfarculaceae;uncultured"	39
+Methane80	"Archaea;Euryarchaeota;Methanococci;Methanococcales;Methanococcaceae;uncultured"	38
+Methane80	"Bacteria;Parcubacteria;Parcubacteria Incertae Sedis;Unknown Order;Unknown Family;Candidatus Paceibacter"	38
+Methane80	"Bacteria;Latescibacteria;uncultured bacterium"	36
+Methane80	"Bacteria;Firmicutes;Bacilli;Bacillales;Bacillaceae;Bacillus"	35
+Methane80	"Bacteria;Caldiserica;Caldisericia;Caldisericales;TTA-B1;uncultured bacterium"	34
+Methane80	"Archaea;Crenarchaeota;Thermoprotei;Desulfurococcales;Desulfurococcaceae;Staphylothermus"	31
+Methane80	"Archaea;Euryarchaeota;Thermococci;Thermococcales;Thermococcaceae;uncultured archaeon"	31
+Methane80	"Archaea;Altiarchaeales;uncultured archaeon"	31
+Methane80	"Archaea;Euryarchaeota;Thermococci;Thermococcales;Thermococcaceae;Pyrococcus"	30
+Methane80	"Archaea;Candidate division YNPFFA;uncultured crenarchaeote"	30
+Methane80	"Bacteria;Actinobacteria;MB-A2-108;uncultured bacterium"	30
+Methane80	"Archaea;Aenigmarchaeota;Deep Sea Euryarchaeotic Group(DSEG);unidentified archaeon"	29
+Methane80	"Archaea;Thaumarchaeota;Group C3;uncultured crenarchaeote"	27
+Methane80	"Bacteria;Proteobacteria;Deltaproteobacteria;Desulfurellales;Desulfurellaceae;Hippea"	27
+Methane80	"Bacteria;Acetothermia;bacterium GBS-1"	27
+Methane80	"Bacteria;Thermotogae;Thermotogae;Thermotogales;Thermotogaceae;Thermotoga"	23
+Methane80	"Bacteria;Aerophobetes;uncultured bacterium"	23
+Methane80	"Bacteria;Firmicutes;Clostridia;Clostridiales;Family XVII;Thermaerobacter"	22
+Methane80	"Bacteria;Chloroflexi;Anaerolineae;Anaerolineales;Anaerolineaceae;uncultured"	21
+Methane80	"Archaea;Crenarchaeota;Thermoprotei;Desulfurococcales;Desulfurococcaceae;Desulfurococcus"	21
+Methane80	"Bacteria;Proteobacteria;Gammaproteobacteria;Legionellales;Legionellaceae;Legionella"	19
+Methane80	"Bacteria;Caldiserica;Caldisericia;Caldisericales;Caldisericaceae;Caldisericum"	19
+Methane80	"Archaea;Bathyarchaeota;uncultured Desulfurococcales archaeon"	19
+Methane80	"Bacteria;Thermotogae;Thermotogae;EM3;bacterium T1.2"	19
+Methane80	"Archaea;Euryarchaeota;Methanococci;Methanococcales;Methanococcaceae;Methanococcus"	18
+Methane80	"Bacteria;Acidobacteria;Blastocatellia;Blastocatellales;Blastocatellaceae (Subgroup 4);11-24"	18
+Methane80	"Archaea;Crenarchaeota;Thermoprotei;Desulfurococcales;Pyrodictiaceae;Pyrodictium"	17
+Methane80	"Bacteria;Thermodesulfobacteria;Thermodesulfobacteria;Thermodesulfobacteriales;Thermodesulfobacteriaceae;uncultured Thermodesulfobacteriaceae bacterium"	17
+Methane80	"Archaea;Euryarchaeota;Thermoplasmata;Thermoplasmatales;pMC2A24;unidentified archaeon"	17
+Methane80	"Archaea;Thaumarchaeota;Papm3A43;uncultured archaeon"	17
+Methane80	"Archaea;Crenarchaeota;Thermoprotei;Desulfurococcales;Desulfurococcaceae;Thermosphaera"	16
+Methane80	"Bacteria;Nitrospirae;Nitrospira;Nitrospirales;Nitrospiraceae;uncultured"	16
+Methane80	"Bacteria;Thermotogae;Thermotogae;EM3;uncultured Thermotogae bacterium"	16
+Methane80	"Bacteria;Acidobacteria;GBS-L1-B05;uncultured bacterium"	16
+Methane80	"Archaea;Thaumarchaeota;YS18As63;uncultured archaeon"	16
+Methane80	"Archaea;pCIRA-13;uncultured archaeon"	15
+Methane80	"Archaea;Euryarchaeota;Methanomicrobia;ANME-1;ANME-1a;uncultured archaeon"	15
+Methane80	"Bacteria;Proteobacteria;Deltaproteobacteria;Deltaproteobacteria Incertae Sedis;Syntrophorhabdaceae;Syntrophorhabdus"	15
+Methane80	"Bacteria;Acidobacteria;Holophagae;Holophagae Incertae Sedis;Unknown Family;Thermoanaerobaculum"	14
+Methane80	"Archaea;uncultured archaeon"	14
+Methane80	"Bacteria;Nitrospirae;Nitrospira;Nitrospirales;Nitrospiraceae;Thermodesulfovibrio"	14
+Methane80	"Bacteria;Firmicutes;Clostridia;Thermoanaerobacterales;Thermoanaerobacteraceae;Caldanaerobacter"	14
+Methane80	"Archaea;Euryarchaeota;Methanococci;Methanococcales;Methanocaldococcaceae;Methanocaldococcus"	14
+Methane80	"Bacteria;Thermotogae;Thermotogae;Thermotogales;Thermotogaceae;Pseudothermotoga"	14
+Methane80	"Archaea;Crenarchaeota;Thermoprotei;Desulfurococcales;Desulfurococcaceae;Ignisphaera"	13
+Methane80	"Archaea;Crenarchaeota;Thermoprotei;Thermoproteales;Thermoproteaceae;Pyrobaculum"	12
+Methane80	"Archaea;Crenarchaeota;Thermoprotei;uncultured archaeon"	12
+Methane80	"Archaea;Euryarchaeota;Archaeoglobi;Archaeoglobales;Archaeoglobaceae;Geoglobus"	12
+Methane80	"Bacteria;Thermotogae;Thermotogae;Thermotogales;Fervidobacteriaceae;Fervidobacterium"	11
+Methane80	"Archaea;Marine Hydrothermal Vent Group 1(MHVG-1);unidentified archaeon"	11
+Methane80	"Bacteria;Aquificae;Aquificae;Aquificales;Aquificaceae;uncultured bacterium"	11
+Methane80	"Bacteria;Aquificae;Aquificae;Aquificales;Aquificaceae;Hydrogenivirga"	11
+Methane80	"Bacteria;Parcubacteria;Candidatus Wolfebacteria;Candidatus Wolfebacteria bacterium GW2011_GWC1_37_10"	11
+Methane80	"Bacteria;Aquificae;Aquificae;Aquificales;Hydrogenothermaceae;uncultured"	11
+Methane80	"Archaea;Bathyarchaeota;uncultured Thermoprotei archaeon"	11
+Methane80	"Bacteria;Parcubacteria;Candidatus Yanofskybacteria;marine sediment metagenome"	11
+Methane80	"Bacteria;Thermotogae;Thermotogae;EM3;bacterium T2.1"	10
+Methane80	"Bacteria;Chloroflexi;S085;uncultured bacterium"	10
+Methane80	"Bacteria;Thermodesulfobacteria;Thermodesulfobacteria;Thermodesulfobacteriales;Thermodesulfobacteriaceae;Thermosulfurimonas"	10
+Methane80	"Bacteria;Gemmatimonadetes;S0134 terrestrial group;uncultured bacterium"	10
+Methane80	"Archaea;Crenarchaeota;Thermoprotei;Desulfurococcales;Desulfurococcaceae;Thermogladius"	10
+Methane80	"Archaea;WSA2;Kazan-3A-21;archaeon enrichment culture clone A11"	10
+Methane80	"Bacteria;Firmicutes;Bacilli;Bacillales;Alicyclobacillaceae;Tumebacillus"	10
+Methane80	"Bacteria;Actinobacteria;Actinobacteria;Micromonosporales;Micromonosporaceae;Salinispora"	9
+Methane80	"Bacteria;Parcubacteria;Parcubacteria bacterium DG_74_3"	9
+Methane80	"Bacteria;Thermodesulfobacteria;Thermodesulfobacteria;Thermodesulfobacteriales;Thermodesulfobacteriaceae;Thermodesulfobacterium"	9
+Methane80	"Archaea;Crenarchaeota;Thermoprotei;Desulfurococcales;Desulfurococcaceae;Aeropyrum"	9
+Methane80	"Archaea;MSBL1;uncultured euryarchaeote"	9
+Methane80	"Bacteria;Proteobacteria;Deltaproteobacteria;Desulfurellales;Desulfurellaceae;G55"	9
+Methane80	"Bacteria;Acidobacteria;Subgroup 13;uncultured Acidobacteria bacterium"	9
+Methane80	"Bacteria;Thermotogae;Thermotogae;Thermotogales;Fervidobacteriaceae;Thermosipho"	9
+Methane80	"Archaea;Diapherotrites;unidentified archaeon"	9
+Methane80	"Bacteria;Firmicutes;Clostridia;Thermoanaerobacterales;Thermoanaerobacteraceae;Thermoanaerobacter"	8
+Methane80	"Archaea;Crenarchaeota;Thermoprotei;Desulfurococcales;Desulfurococcaceae;uncultured archaeon"	8
+Methane80	"Bacteria;Aquificae;Aquificae;Aquificales;Aquificaceae;Aquifex"	8
+Methane80	"Bacteria;Marinimicrobia (SAR406 clade);uncultured bacterium"	8
+Methane80	"Bacteria;Aquificae;Aquificae;Aquificales;Aquificales Incertae Sedis;Thermosulfidibacter"	8
+Methane80	"Bacteria;Actinobacteria;Nitriliruptoria;Euzebyales;Euzebyaceae;Egibacter"	8
+Methane80	"Bacteria;Planctomycetes;Planctomycetacia;Planctomycetales;Planctomycetaceae;Planctomyces"	8
