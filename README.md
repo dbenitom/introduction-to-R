@@ -25,7 +25,7 @@ The contents of this workshop were adapted from ["Curso básico de R"](http://ww
 
 Name | GitHub handle | email
 ---|---|---
-David Benito | @dbenitom | dbenito@mpi-bremen.de
-Hagen Buck-Wiese | @Buck-Wiese | hbuck@mpi-bremen.de
-[Matthew Schechter](https://orcid.org/0000-0002-8435-3203) | @mschecht | mschechter@uchicago.edu
-Chiara Vanni | @ChiaraVanni | cvanni@mpi-bremen.de
+David Benito | [dbenitom](https://github.com/dbenitom) | dbenito@mpi-bremen.de
+Hagen Buck-Wiese | (Buck-Wiese)[https://github.com/Buck-Wiese] | hbuck@mpi-bremen.de
+[Matthew Schechter](https://orcid.org/0000-0002-8435-3203) |  (mschecht)[https://github.com/mschecht] | mschechter@uchicago.edu
+Chiara Vanni | (ChiaraVanni)[https://github.com/ChiaraVanni] | cvanni@mpi-bremen.de
