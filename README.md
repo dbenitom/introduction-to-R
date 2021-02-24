@@ -10,7 +10,7 @@ The download and installation should be pretty straight-forward, if you have tro
 ## Getting the workshop "syllabus"
 
 1. Go to the [workshop GitHub repository](https://github.com/dbenitom/introduction-to-R) (you should already be there if you are reading this ;))
-2. Click on `Clone or download`, then click `Download ZIP`. Save this file somewhere useful on your local computer.
+2. Click on the `Code` tab, then click `Download ZIP`. Save this file somewhere useful on your local computer.
 
 ![](imgs/github.PNG)
 
