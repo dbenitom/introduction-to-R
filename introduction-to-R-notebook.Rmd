@@ -1,0 +1,319 @@
+---
+title: "Introduction to R"
+author: "David & Hagen"
+date: "March 2021"
+output: html_document
+---
+
+Ok, before we start, please run the code below to download a few packages for the course :)
+
+```
+install.packages("tidyverse")
+install.packages("readxl")
+install.packages("ggplot2")
+```
+
+
+
+# Why R?
+***
+
+R is a programming language and free software environment for statistical computing and graphics supported by the R Foundation for Statistical Computing. The R language is widely used among statisticians and data miners for developing statistical software and data analysis. [Wikipedia](https://en.wikipedia.org/wiki/R_(programming_language))
+
+In summary:
+
+* R is free
+* R is multi-platform (Windows, GNU-Linux, MacOSX)
+* R has a great help system
+* R has a lot of pre-installed statistical functions
+* The user can create and apply their own functions in R
+* R makes data analyses **reproducible**
+* Great online community (i.e. [Stack Overflow](https://stackoverflow.com/questions/tagged/r), [#rstats](https://twitter.com/search?q=%23rstats&src=typd))
+* Very popular among biologists
+
+Here are some great open source resources for your references:
+
+- [R for Data Science](https://r4ds.had.co.nz/)
+- [Advanced R](http://adv-r.had.co.nz/)
+- [Fundamentals of Data Visualization](https://serialmentor.com/dataviz/)
+- [blogdown: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/)
+- [RStudio cheatsheets](https://www.rstudio.com/resources/cheatsheets/)
+
+
+
+# General tips for learning R programming
+***
+
+* **Google is your friend!** All levels of programmers search the web for solutions to coding problems. As you continue to develop your R skills you will also develop an intuition to search for solutions faster.
+* **Organize** your data, images, scripts, and notebooks into separate directories. You have a lot of worry about... the more organized you are better.
+* **Comment your code!** Try to consistently write notes within your code to explain what you are doing and your results. If you don't, you WILL forget when you come back to it in the future. "Damn you, past self!"
+* Stay positive and have fun :)
+
+# Downloading R and RStudio
+***
+
+R versions can be downloaded from the [Comprehensive R Archive Network website](https://cran.r-project.org/). RStudio can be downloaded from the [website](https://www.rstudio.com/products/rstudio/download/).
+
+
+# RStudio interface
+***
+
+### 1. Script window
+
+Works as a text editor.
+![](imgs/1_scripts.png)
+
+### 2. Console window
+
+Here is where the R functions are executed.
+![](imgs/2_console.png)
+
+### 3. Environment
+
+Every data object or R object created during the session is stored here.
+![](imgs/3_environment.png)
+
+### 4. Plot/Help/etc window
+
+![](imgs/4_files.png)
+
+
+# Introduction to R programming language
+***
+
+We are getting into the exciting stuff! Open RStudio and start a new R script. This is like a text file where we will write and execute our commands.
+
+## Intro
+
+When writing R code, using hashtags (#) to include comments is highly recommended to make the notes understandable. Example:
+
+```{r}
+print("Hello") # This command prints an initial greeting :)
+```
+
+## How to get help
+
+Use `?` to read the help page of functions or data sets. For example:
+
+`?R.version`
+
+or 
+
+`help(R.Version)`
+
+The [RStudio cheatsheets](https://www.rstudio.com/resources/cheatsheets/) are a great resource.
+
+Also check [Stack Overflow](https://stackoverflow.com/questions/tagged/r) frequently :)
+
+
+## Object names
+
+To assign an object to a name we use `<-` (equivalent to `=`). The shortcut for `<-` is `Alt + -`. Names...
+
+* ... are case sensitive
+* ... can contain letters, numbers, "." and "_". They should start with a letter.
+* ... should not have function or operator names: `function`, `if`, `c`...
+
+Tip: give clear and descriptive names to R objects and data.
+
+Example: create:
+
+```{r}
+Greeting <- print("Hello world!")
+
+Greeting
+```
+
+## Data objects
+
+The types of objects in R:
+
+* **Vectors**. String of characters/numbers/...
+* **Factors**. For qualitative data: each caharacter is a "category".
+* **Lists**. Can contain vectors of different types (integer, double, Boolean...).
+* **Arrays**. Vectors organised by rows and columns. It can only store data of one type.
+* **Data frames**. Like an array but can contain columns of different types. The columns are called *variables*. A data frame is the most common way of storing data in R.
+
+Some examples:
+
+```{r}
+# Vectors
+x <- c(8,2,5,6,7)
+y <- c(34,23,67,65,23)
+z <- c(TRUE, TRUE, FALSE, FALSE, TRUE)
+w <- c("Hello", "Hallo", "Hola")
+
+# Factors
+a <- factor(c(1,2,3,4,5))
+b <- factor(c("a", "b", "c", "d", "e"))
+
+# Lists
+l <- list(1:3, "a", c(TRUE, FALSE, TRUE), c(2.3, 5.9))
+l
+# The elements in a list can be named:
+l_named <- list(int = 1:3, char = "a", bool = c(TRUE, FALSE, TRUE), dbl = c(2.3, 5.9))
+l_named
+
+# Array
+num.data <- array(c(x, y, z), dim=c(5,3))
+num.data # Note that the logical vector is turned into a vector of 0 and 1.
+# You can also transpose an array:
+num.data.t <- t(num.data)
+num.data.t
+
+# Data frame
+my.data <- data.frame(num.data, row.names = b)
+my.data
+# You can also create your data frame in a more organised way:
+my.data.org <- data.frame(x, y, z, row.names = b)
+my.data.org
+```
+
+**YOUR TURN #1** - Make an R object with the names of your best friends and print it.
+
+## Attributes of theobjects:
+
+* Attributes `attributes`
+* Mode `mode`
+* Type `typeof`
+* Names `names`
+* Dimensions `dim`. Only in two-dimensional data.
+* Names of the dimensions `dimnames`
+* Class `class`
+
+Check what are the attributes of the objects created before. For example:
+
+```{r}
+dim(x)
+dim(my.data)
+dimnames(my.data)
+attributes(my.data.org)
+# etc
+```
+
+**YOUR TURN #2** - Create a data frame containing some information about these friends: the row names are the names of your friends, the first column is their age, the second column is their hair colour and the third column is... you choose! Explore the attributes, dimensions, dimension names, etc. of this data frame.
+
+## Subsetting objects
+
+
+With the function `c()` we can generate **strings** of values. With the coordinates (square brackets, `[` and `]`) we can **select** specific elements from strings. With the operator `$` we can access columns in a **data frame** by the variable name.
+
+You can find some help on subsetting [here](http://www.statmethods.net/management/subset.html) and [here](http://adv-r.had.co.nz/Subsetting.html)
+
+Examples:
+
+```{r}
+# Generate a vector of consecutive numbers:
+g <- c(1:7)
+g
+
+# Select specific elements from a vector
+x
+x[2]
+x[c(2,4)]
+x[2:4]
+
+# Select specific elements from a matrix.
+num.data
+num.data[1, 1]
+num.data[1:3, c(1,3)]
+# This is useful to make subsets:
+num.data.subset <- num.data[,1:2]
+num.data.subset
+
+# Access the variables in a data frame.
+my.data.org$x
+my.data.org$y
+```
+
+**YOUR TURN #3** - You've decided you're not friends with one of people in the `friends` data frame anymore. Remove their information from your data frame.
+
+## Dealing with NAs
+
+Identifying and replacing non-available (NA) values in our data sets can be useful and necessary for :
+
+```{r}
+v <- c(1, 5, 19, 2, 23, NA, 3, 9, NA)
+v
+
+is.na(v)
+which(is.na(v))
+
+# Create a vector without the NAs
+w <- v[!is.na(v)]
+w
+
+# Substitute NAs for e.g. 0
+v2 <- v
+v2[is.na(v2)] <- 0
+v2
+
+# NAs can be removed in some functions
+mean(v)
+mean(v, na.rm=TRUE)
+```
+
+# Importing and exporting data
+***
+
+## Importing data from Excel
+
+We can import a data set from Excel from the environment window i RStudio:
+
+![Click on `Import Dataset` --> `From Excel...`.](imgs/import.PNG)
+
+If your data is already organised into columns, tick the box "Headings".
+
+An alternative is to save the Excel file as a comma-separated values (`.csv`) or a tab-separated values (`.tsv`) file. The `.csv` and `.tsv` files can also be imported from the tab "Environment" in RStudio or you can use this command:
+
+```{r}
+Mforsetti <- read.csv("data/Maribacter_forsetti_OD.csv", header = TRUE, sep = ";")
+```
+
+Check out your data
+
+```{r}
+head(Mforsetti)
+
+tail(Mforsetti)
+```
+
+## Exporting data
+
+We will subset the last lines of the data frame and save it as a new file:
+
+```{r}
+Mforsetti_tail <- tail(Mforsetti)
+
+# csv
+write.csv(Mforsetti_tail, file = "data/Mforsetti_tail.csv", quote = FALSE, row.names = FALSE, col.names = TRUE)
+
+# tsv
+write.table(Mforsetti_tail, file = "data/Mforsetti_tail.tsv", sep = "\t", quote = FALSE, row.names = FALSE, col.names = TRUE)
+```
+
+
+# Installing Packages
+***
+
+A package is file containing some functions designed for a specific task(s). For example, `ggplot2` is very useful to create elegant plots and the package `vegan` is used for ecological analyses.
+
+The package `readxl` is designed to deal with `.xlsx` files. One advantage is that it has functions that allow to read files with more than one spreadsheet.
+
+Which packages are currently loaded?
+
+```{r}
+sessionInfo()
+```
+
+To install a package and to activate it in the current workspace we do:
+
+```
+# To install a package (this task can take a while and may ask for additional packages to be installed):
+install.packages("ggplot2")
+
+# To call the package and use its functions in the current session use:
+library(ggplot2) # or:
+require(ggplot2)
+```
+
