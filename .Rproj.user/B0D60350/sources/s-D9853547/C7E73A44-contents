@@ -60,7 +60,7 @@ raw_growth_data %>%
 
 
 # save information derived from data set using <-
-times<-raw_growth_data %>%
+times <- raw_growth_data %>%
   select(time_h)
 
 glucose_info <- raw_growth_data %>%

@@ -1,0 +1,25 @@
+{
+    "id": "68C942CE",
+    "path": "D:/Workshops_Conferences/20200113_R_workshop/basic_R/notebooks/workshop_notebook.Rmd",
+    "project_path": null,
+    "type": "r_markdown",
+    "hash": "0",
+    "contents": "",
+    "dirty": true,
+    "created": 1614272642477.0,
+    "source_on_save": false,
+    "relative_order": 4,
+    "properties": {
+        "chunk_output_type": "console",
+        "cursorPosition": "422,21",
+        "scrollLine": "404"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1614165799,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1614272653358,
+    "read_only": false,
+    "read_only_alternatives": []
+}
