@@ -1,5 +1,5 @@
 # Introduction to R course
-Workshop on R language (base R and tidyverse) and some plotting notions (ggplot2).
+Workshop on R language (`baseR` and `tidyverse`) and some plotting notions (`ggplot2`).
 
 ## Downloading R and RStudio
 
