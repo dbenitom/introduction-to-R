@@ -498,8 +498,6 @@ ggplot()+
 Now take a different substrate:
 
 ```{r}
-
-
 ggplot(data=raw_growth_data)+
   geom_point(aes(x=time_h, y=arabinan))
 
@@ -561,9 +559,15 @@ data.tb.subset <- data.tb.subset %>% mutate(rel_abun=(reads/sum(reads)))
 # the plot 
 ggplot(data=data.tb.subset, aes(x=sample, y=rel_abun, fill=taxonomy))+ 
   geom_bar(stat="identity", position="stack", color="black")
-# Can you see the problem in the plot?
 
-# Let's collapse taxa with <1% relative abundance into a generic category.
+```
+
+Can you see the problem in the plot above? 
+
+There are too many taxa with low abundance!! Time to do some subset engineering. Let's collapse taxa with <1% relative abundance into a generic category.
+
+```{r}
+
 # Rename the taxonomy row where the relative abundance is lower than 0.01:
 data.tb.subset$taxonomy[ data.tb.subset$rel_abun<0.01 ] <- "taxa <1% relative abundance"
 
@@ -572,12 +576,16 @@ data.plot <- ggplot(data=data.tb.subset, aes(x=sample, y=rel_abun, fill=taxonomy
   geom_bar(stat="identity", position="stack", color="black")
 # Here's the plot:
 data.plot
+```
 
+The plot looks strange in the document because of the large legend, but it will (hopefully!) look better in the lower right corner of your RStudio window. Let's save the plot in case we want to 
+
+```{r}
 # Let's save the plot for further processing
 ggsave(filename = "16S_plot.pdf", plot=data.plot, device="pdf", width=25, height=15, units="cm")
 ```
 
-Here's a really simple first bar plot. You can explore the `ggplot2` universe in google to beautify your plot.
+Here's a really simple first bar plot. You can explore the `ggplot2` universe in google to beautify your plot or you can edit it with some image processing software.
 
 
 # Some useful packages
