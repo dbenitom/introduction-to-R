@@ -11,6 +11,9 @@ Ok, before we start, please run the code below to download a few packages for th
 install.packages("tidyverse")
 install.packages("readxl")
 install.packages("ggplot2")
+install.packages("dplyr")
+install.packages("car")
+install.packages("gtools")
 ```
 
 
@@ -169,9 +172,9 @@ my.data.org <- data.frame(x, y, z, row.names = b)
 my.data.org
 ```
 
-**YOUR TURN #1** - Make an R object with the names of your best friends and print it.
+**YOUR TURN #1** - Make an R object with the names of your best friends and print it: create a vector with your friends' names
 
-## Attributes of theobjects:
+## Attributes of the objects
 
 * Attributes `attributes`
 * Mode `mode`
@@ -191,7 +194,13 @@ attributes(my.data.org)
 # etc
 ```
 
-**YOUR TURN #2** - Create a data frame containing some information about these friends: the row names are the names of your friends, the first column is their age, the second column is their hair colour and the third column is... you choose! Explore the attributes, dimensions, dimension names, etc. of this data frame.
+**YOUR TURN #2** - Work in groups and create a data frame containing some information about your friends: the row names are the names of your friends, the first column is their age, the second column is their city of origin, the third column is their hair colour and the fourth column is... you choose! 
+Explore the attributes, dimensions, dimension names, etc. of the `friends` data frame.
+There are several ways to do it and we suggest you try your own. Here are some hints in case you need them:
+a. You can create each variable as a vector: names, age, hair colour... Remember that you create vectors with the function `c()` and that you need to quote `"` text.
+b. Paste the vectors together as a data frame (see the help for `?data.frame`) and specify the row names using the `names` object.
+c. Ask us if you need further help.
+
 
 ## Subsetting objects
 
@@ -221,6 +230,12 @@ num.data[1:3, c(1,3)]
 num.data.subset <- num.data[,1:2]
 num.data.subset
 
+# You can also delete a row or column with the minus (-) sign
+# Remove the first row:
+num.data[-1, ]
+# Remove the third column:
+num.data[ ,-3]
+
 # Access the variables in a data frame.
 my.data.org$x
 my.data.org$y
@@ -236,8 +251,13 @@ Identifying and replacing non-available (NA) values in our data sets can be usef
 v <- c(1, 5, 19, 2, 23, NA, 3, 9, NA)
 v
 
+# identify NAs
 is.na(v)
 which(is.na(v))
+
+# Identify non-NAs:
+complete.cases(v)
+
 
 # Create a vector without the NAs
 w <- v[!is.na(v)]
@@ -293,6 +313,7 @@ write.table(Mforsetti_tail, file = "data/Mforsetti_tail.tsv", sep = "\t", quote 
 ```
 
 
+
 # Installing Packages
 ***
 
@@ -317,8 +338,246 @@ library(ggplot2) # or:
 require(ggplot2)
 ```
 
+# Tidyverse
+***
+
+The Tidyverse packages are a modern set of functions that are based on [the tidy tools manifesto](https://cran.r-project.org/web/packages/tidyverse/vignettes/manifesto.html) by Hadley Wickham. Two of the principles in the manifesto that we believe are important for teaching R are:
+
+- Compose simple functions with the pipe `%>%` (shortcut `Cntr + Tab + m`)
+- More human-readable than base R
+
+```{r}
+# load required packages ####
+library(readxl)
+library(ggplot2)
+library(car)
+library(dplyr)
+library(gtools)
+```
+
+## 1. Introduction to `dplyr`
+
+The [`dplyr` package](https://dplyr.tidyverse.org/) allows you to interact with data frames and tibbles (a task most biologist will be doing). The package is easy to learn because it is based around using verbs to manipulate your data frames. In fact, `dplyr` is referred to as, "the grammar of data manipulation." Here are the verbs we will learn about today:
+  
+* `select()`: return specific columns of a data frame
+* `filter()`: extract rows of a data frame that meet specified conditions
+* `summarise()`: return summary statistics for your data frame
+* `mutate()`: add a new column to your data frame
+* `rename()`: rename the title of a column
+
+Let's begin using Tidyverse functions with microbial growth data.
+
+```{r}
+# data import ####
+raw_growth_data<-read_excel("data/Maribacter_forsetti_OD.xlsx")
+
+head(raw_growth_data)
+```
+
+How to pipe with `%>%` (shortcut `Cntr + Tab + m`).
+
+```{r}
+# Which timepoints were measured?
+raw_growth_data %>%
+  select(time_h)
+
+# when was the the OD in the glucose incubation higher than 0.2?
+raw_growth_data %>%
+  filter(glucose>0.2)%>%
+  select(c(time_h, glucose))
+
+# what was the max OD of the glucose incubation? note that "max_OD" is just a name, could be anything
+raw_growth_data %>%
+  summarise(max_OD= max(glucose))
+  
+# what was the mean OD of the glucose incubation between 60 h and 180 h incubation?
+raw_growth_data %>%
+  filter(time_h> 60 & time_h<180) %>%
+  summarise(mean_OD_60to180h = mean(glucose), measurements = n())
+```
+
+**YOUR TURN #4**:
+a. look at the time and the ODs of the arabinan and the debranched arabinan together
+b. report the maximum OD for arabinan and the maximum OD for debranched arabinan
+c. choose a time interval and calculate the mean OD of the arabinan and the debranched arabinan incubation
+BONUS: also calculate the standard deviation for the chosen time interval
+
+```{r}
+# save information derived from data set using <-
+times <- raw_growth_data %>%
+  select(time_h)
+
+glucose_info <- raw_growth_data %>%
+  filter(time_h > 100) %>%
+  summarise(mean_glucose = mean(glucose), sd_glucose = sd(glucose))
+
+control_info <- raw_growth_data %>%
+  filter(time_h > 100)%>%
+  summarise(mean_control = mean(control), sd_control = sd(control))
+
+raw_growth_data %>%
+  mutate(glucose-control)
+
+difference<- raw_growth_data %>%
+  mutate(difference = glucose-control) %>%
+  select(difference)
+
+raw_growth_data$difference <- difference
+
+raw_growth_data %>%
+  rename(diff = difference)
+
+```
+
+**YOUR TURN #5**: calculate the difference between arabinan and debranched arabinan and add it as a new column.
 
 
+## 2. Explore plotting with `ggplot2`
+
+In this [link](https://ggplot2.tidyverse.org/) you can see the introduction and manual to `ggplot2`.
+
+In most cases you start with `ggplot()`, supply a dataset (with `data()`) and aesthetic mapping (with `aes()`). You then add on layers (like `geom_point()` for a dot plot, or `geom_histogram()` for a histogram, `geom_bar()` for a bar plot, ...), scales (like `scale_colour_brewer()`), themes, etc. Better see some examples:
+
+```{r}
+ggplot(data=raw_growth_data)+
+  geom_point(aes(x=time_h, y=glucose))
+
+ggplot(data=raw_growth_data)+
+  geom_point(aes(x=time_h, y=glucose))+
+  geom_point(aes(x=time_h, y=control), color="blue", size=2, pch=25, fill="pink")+
+  theme_light()
+```
+
+**YOUR TURN #6**
+a. try out plotting different incubations like arabinan etc.
+b. try different colors
+c. try to use geom_line instead of geom_point
+
+BONUS: have lunch
+
+Comments? Interested in microbial growth? Need to improve digestibility!
+
+```{r}
+ggplot(data=raw_growth_data)+
+  geom_point(aes(x=time_h, y=car::logit(glucose/max(glucose))))+
+  theme_light()
+
+glucose_growth_phase<-raw_growth_data %>%
+  filter(time_h<180)
+
+ggplot(data=glucose_growth_phase)+
+  geom_point(aes(x=time_h, y=car::logit(glucose/max(glucose))))+
+  theme_light()
+
+model_glucose<-lm(glucose~time_h, glucose_growth_phase)
+
+logit_model_glucose<-lm(car::logit(glucose/max(glucose))~time_h, glucose_growth_phase)
+summary(logit_model_glucose)
+
+
+ggplot(data=raw_growth_data)+
+  geom_point(aes(x=time_h, y=glucose))+
+  geom_line(aes(x=time_h, y=time_h*model_glucose$coefficients[2]+model_glucose$coefficients[1]))+
+  geom_line(aes(x=time_h, 
+                y=inv.logit(time_h*logit_model_glucose$coefficients[2]+logit_model_glucose$coefficients[1])*max(glucose)))+
+  theme_light()
+
+
+model_time<-seq(0,350,1)
+model_max<-as.numeric(raw_growth_data %>%
+  summarise(max(glucose)))
+
+ggplot()+
+  geom_point(data=raw_growth_data, aes(x=time_h, y=glucose))+
+  geom_line(aes(x=model_time, y=model_time*model_glucose$coefficients[2]+model_glucose$coefficients[1]))+
+  geom_line(aes(x=model_time, 
+                y=inv.logit(model_time*logit_model_glucose$coefficients[2]+logit_model_glucose$coefficients[1])*model_max))+
+  theme_light()
+```
+
+Now take a different substrate:
+
+```{r}
+
+
+ggplot(data=raw_growth_data)+
+  geom_point(aes(x=time_h, y=arabinan))
+
+# Comments: 
+# a. plot looks like ass
+# b. sigmoidal shape
+
+ggplot(data=raw_growth_data)+
+  geom_point(aes(x=time_h, y=logit(arabinan/max(arabinan))))
+
+arabinan_growth_phase<-raw_growth_data %>%
+  filter(time_h<150L)
+
+model_arabinan<-lm(arabinan~time_h, arabinan_growth_phase)
+
+logit_model_arabinan<-lm(car::logit(arabinan/max(arabinan))~time_h, arabinan_growth_phase)
+summary(logit_model_arabinan)
+
+
+ggplot(data=raw_growth_data)+
+  geom_point(aes(x=time_h, y=arabinan))+
+  geom_line(aes(x=time_h, y=time_h*model_arabinan$coefficients[2]+model_arabinan$coefficients[1]))+
+  geom_line(aes(x=time_h, 
+                y=inv.logit(time_h*logit_model_arabinan$coefficients[2]+logit_model_arabinan$coefficients[1])*max(arabinan)))+
+  theme_classic()
+```
+
+
+# Bar plot with 16S rRNA data
+***
+
+Now let's check some basic notions of bar plots with 16S data.
+
+```{r}
+# Load packages:
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+```
+
+The data were generated with [`phyloFlash`](https://github.com/HRGV/phyloFlash) by extracting 16S rRNA genes and mapping metagenomic reads to estimate abundances. They belong to three different cultures, but let's just focus on one of them for the sake of simplicity :)
+
+```{r}
+# Load the data:
+data <- read.table(file = "data/16S_data_phyloflash.tsv", header=T)
+
+# Check it out:
+head(data)
+
+# Create tibble (dataframe readable for tidyverse):
+data.tb <- tibble(data)
+
+# Create subset: filter only the sample "Methane70":
+data.tb.subset <- data.tb %>% filter(sample=="Methane70")
+
+# Create a column with relative abundances of each taxon:
+data.tb.subset <- data.tb.subset %>% mutate(rel_abun=(reads/sum(reads)))
+
+# the plot 
+ggplot(data=data.tb.subset, aes(x=sample, y=rel_abun, fill=taxonomy))+ 
+  geom_bar(stat="identity", position="stack", color="black")
+# Can you see the problem in the plot?
+
+# Let's collapse taxa with <1% relative abundance into a generic category.
+# Rename the taxonomy row where the relative abundance is lower than 0.01:
+data.tb.subset$taxonomy[ data.tb.subset$rel_abun<0.01 ] <- "taxa <1% relative abundance"
+
+# Let's generate the plot with the new dataset:
+data.plot <- ggplot(data=data.tb.subset, aes(x=sample, y=rel_abun, fill=taxonomy))+ 
+  geom_bar(stat="identity", position="stack", color="black")
+# Here's the plot:
+data.plot
+
+# Let's save the plot for further processing
+ggsave(filename = "16S_plot.pdf", plot=data.plot, device="pdf", width=25, height=15, units="cm")
+```
+
+Here's a really simple first bar plot. You can explore the `ggplot2` universe in google to beautify your plot.
 
 
 # Some useful packages
