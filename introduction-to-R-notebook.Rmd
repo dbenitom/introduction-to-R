@@ -317,3 +317,50 @@ library(ggplot2) # or:
 require(ggplot2)
 ```
 
+
+
+
+
+# Some useful packages
+***
+
+Here are some useful R packages for (micro)biologists:
+
+* **`ggplot2`**. The reference package for plotting. [Here](http://girke.bioinformatics.ucr.edu/CSHL_RNAseq/mydoc/mydoc_Rgraphics_5/) you can find a manual and [here](https://rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf) you can find the super useful cheatsheet.
+* **`vegan`** contains some multivariate statistics functions for community ecology. Find the vignette [here](https://cran.r-project.org/web/packages/vegan/vegan.pdf).
+* **`dada2`**. You can do 16S amplicon analysis in R with this package. Find all information and tutorials [here](https://benjjneb.github.io/dada2/tutorial.html).
+* **`phyloseq`**. Super powerful package for microbiome data analysis. Really useful for plots: alpha diversity, phylogenetic trees, heatmats, bar plots... Check all the information and tutorials [here](https://joey711.github.io/phyloseq/).
+* **`gbtools`** allows interactive visualisation of metagenomic bins in R. Starting from assembled contigs, with mapped data and functional genes annotates, you can extract bins from metagenomes. Follow the manual [here](https://github.com/kbseah/genome-bin-tools/wiki).
+
+
+## Document edition and interactive notebooks in R: R markdown and R notebooks
+***
+
+R can use markdown syntax to generate texts with embedded code and plots (for example, the text you are reading right now). It's a bit different to R script notation but really useful as well!. Check the [R markdown cheatsheet](https://www.rstudio.com/resources/cheatsheets/) for markdown help.
+
+In this section, let's open the file `workshop_notebook.Rmd` in R Studio and check it in parallel to the `workshop_notebook.html` file. We have created a R notebook (written in R markdown) that can be "knitted" to generate an `html` document.
+
+The elements of an R Markdown document are:
+
+* the header. This is where the title, author, date and output format is specified. Output format can be `.pdf`, `.html`, `.docx`...
+* the main text. It can include sections, bullet points, tables, etc. Sorry to repeat ourselves, but check the [R markdown cheatsheet](https://www.rstudio.com/resources/cheatsheets/) for more information :)
+* code chunks. To insert an R code chunk type `Cntrl + Alt + I` or go to the `Insert` tab in the script window in R Studio. The chunks work like tiny R scripts and you can also include comments inside using hash tags (#). Apart from R code, you can include chunks for other coding languages.
+
+R notebooks are a great tool to create, for example, an interactive bioinformatics lab book. 
+
+
+## Credits
+***
+
+The contents of this workshop were adapted from ["Curso básico de R"](http://www.ub.edu/stat/docencia/EADB/Curso%20basico%20de%20R.pdf) by Francesc Carmona, the [P2P course](https://rawgit.com/genomewalker/p2p/master/friday/P2P_r_crash_course.html#32_ggplot2) by Antonio Fernàndez-Guerra and Pelin Yilmaz and [Happy Belly Bioinformatics' R basics](https://astrobiomike.github.io/R/basics) by Michael D. Lee.
+
+
+## Contributors
+***
+
+Name | GitHub handle | email
+---|---|---
+David Benito | [dbenitom](https://github.com/dbenitom) | dbenito@mpi-bremen.de
+Hagen Buck-Wiese | [Buck-Wiese](https://github.com/Buck-Wiese) | hbuck@mpi-bremen.de
+[Matthew Schechter](https://orcid.org/0000-0002-8435-3203) |  [mschecht](https://github.com/mschecht) | mschechter@uchicago.edu
+Chiara Vanni | [ChiaraVanni](https://github.com/ChiaraVanni) | cvanni@mpi-bremen.de
