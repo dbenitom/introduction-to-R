@@ -455,12 +455,32 @@ c. try to use geom_line instead of geom_point
 
 BONUS: have lunch
 
-Comments? Interested in microbial growth? Need to improve digestibility!
+
+## 3. Deal with the pattern in microbial growth (lag - exponential - stationary)
+
+The logit function in car computes the logit transformation 
+logit = log[p/(1 - p)] 
+for the proportion p.
+
+If p = 0 or 1, then the logit is undefined. logit can remap the proportions to 
+the interval (adjust, 1 - adjust) prior to the transformation. If it adjusts the 
+data automatically, logit will print a warning message. 
 
 ```{r}
 ggplot(data=raw_growth_data)+
   geom_point(aes(x=time_h, y=car::logit(glucose/max(glucose))))+
   theme_light()
+
+ggplot(data=raw_growth_data)+
+  geom_point(aes(x=time_h, y=car::logit(glucose/max(glucose), adjust = 0.01)))+
+  theme_light()
+```
+
+
+Does the logit function do the trick?
+Let's focus on the more relevant part of the glucose incubation.
+
+```{r}
 
 glucose_growth_phase<-raw_growth_data %>%
   filter(time_h<180)
@@ -469,33 +489,86 @@ ggplot(data=glucose_growth_phase)+
   geom_point(aes(x=time_h, y=car::logit(glucose/max(glucose))))+
   theme_light()
 
+```
+
+Now we can compare the original and the logit transformed data.
+We will try to do a regression over incubation time with each of them.
+
+```{r}
 model_glucose<-lm(glucose~time_h, glucose_growth_phase)
 
-logit_model_glucose<-lm(car::logit(glucose/max(glucose))~time_h, glucose_growth_phase)
+logit_model_glucose<-lm(car::logit(glucose/max(glucose), adjust = 0.01)~time_h, 
+                        glucose_growth_phase)
 summary(logit_model_glucose)
 
+```
 
+## Your turn
+Try different values for the adjust parameter and check the resulting models.
+Do you notice any changes?
+
+
+We can use the calculated model parameters to visualize the regressions.
+  First, we will extract the parameters for the slope and the intercept.
+  Second, we will create a plot with lines for both models.
+
+The only difficulty here is that we have to transform the values from the
+logit model back, otherwise the values are nonsense. But don't worry, we'll 
+show you how.
+```{r}
+
+original_slope<- model_glucose$coefficients[2]
+original_intercept<- model_glucose$coefficients[1]
+
+ggplot(data=raw_growth_data)+
+  geom_point(aes(x=time_h, y=glucose))+
+  geom_line(aes(x=time_h, y=time_h*original_slope+original_intercept))+
+  theme_light()
+
+logit_slope<-logit_model_glucose$coefficients[2]
+logit_intercept<-logit_model_glucose$coefficients[1]
+```
+
+With this done, we use the inv.logit function from the gtools package to 
+get back to meaningful values from the logit model. As we previously divided
+by the maximum value of the glucose incubation to get to proportions, now we have
+to multiply by this value.
+
+```{r}
 ggplot(data=raw_growth_data)+
   geom_point(aes(x=time_h, y=glucose))+
   geom_line(aes(x=time_h, y=time_h*model_glucose$coefficients[2]+model_glucose$coefficients[1]))+
   geom_line(aes(x=time_h, 
-                y=inv.logit(time_h*logit_model_glucose$coefficients[2]+logit_model_glucose$coefficients[1])*max(glucose)))+
+                y=inv.logit(time_h*logit_slope+logit_intercept)*max(glucose)))+
   theme_light()
+```
+Neat!
 
+Finally, we can really model how the curve would look like with OD measurements 
+done every hour over the first 350 h given the calculated slopes and intercepts.
 
+To do so, we'll use the seq command, which generate a vector with a sequence of
+numbers from the first number given up to the second number given in intervals
+of the third number given. In our plot, we then use this sequence instead of 
+the original sampling times.
+
+Note that now the point that we plot and the lines that we plot stem from
+two separate datasets, so we have to save the maximum value for glucose first.
+
+```{r}
 model_time<-seq(0,350,1)
 model_max<-as.numeric(raw_growth_data %>%
   summarise(max(glucose)))
 
 ggplot()+
   geom_point(data=raw_growth_data, aes(x=time_h, y=glucose))+
-  geom_line(aes(x=model_time, y=model_time*model_glucose$coefficients[2]+model_glucose$coefficients[1]))+
+  geom_line(aes(x=model_time, y=model_time*original_slope+original_intercept))+
   geom_line(aes(x=model_time, 
-                y=inv.logit(model_time*logit_model_glucose$coefficients[2]+logit_model_glucose$coefficients[1])*model_max))+
+                y=inv.logit(model_time*logit_slope+logit_intercept)*model_max))+
   theme_light()
 ```
 
-Now take a different substrate:
+## Your turn: try to model the growth with a substrate of your choice
 
 ```{r}
 ggplot(data=raw_growth_data)+
